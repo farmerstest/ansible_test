@@ -1,4 +1,6 @@
-- name: Creates directory
-  file:
-    path: /src/www
-    state: directory
+- hosts: all
+  tasks:
+  - name: ansible create directory example
+    file:
+      path: /tmp/devops_directory
+      state: directory
